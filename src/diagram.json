@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 167.9, "left": 14.2, "attrs": {} },
+    { "type": "wokwi-ili9341", "id": "lcd1", "top": 33.7, "left": 270, "rotate": 90, "attrs": {} },
+    {
+      "type": "wokwi-microsd-card",
+      "id": "sd1",
+      "top": 297.17,
+      "left": 186.73,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -155.6,
+      "left": -301.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 163.1,
+      "left": -73.3,
+      "rotate": 180,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "sd1:VCC", "esp:3V3", "red", [ "h-57.6", "v-0.14" ] ],
+    [ "sd1:GND", "esp:GND.2", "black", [ "h-57.6", "v28.69", "h-115.2", "v-57.5" ] ],
+    [ "esp:D19", "sd1:DO", "orange", [ "h47.7", "v115.1" ] ],
+    [ "esp:D23", "sd1:DI", "green", [ "h57.3", "v124.9" ] ],
+    [ "sd1:SCK", "esp:D18", "blue", [ "h-38.4", "v-76.79" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "h-76.8", "v182.4" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-201.6", "v163.2" ] ],
+    [ "lcd1:CS", "esp:D15", "purple", [ "h-86.4", "v144" ] ],
+    [ "lcd1:D/C", "esp:D2", "#8f4814", [ "h-28.8", "v124.8" ] ],
+    [ "lcd1:MOSI", "esp:D23", "green", [ "h0" ] ],
+    [ "lcd1:SCK", "esp:D18", "blue", [ "h-19.2", "v57.59" ] ],
+    [ "lcd1:MISO", "esp:D19", "orange", [ "h-9.6", "v19.19" ] ],
+    [ "esp:D4", "lcd1:RST", "cyan", [ "h9.3", "v-115.1" ] ],
+    [ "keypad1:R1", "esp:D13", "green", [ "v0" ] ],
+    [ "keypad1:R2", "esp:D12", "green", [ "v0" ] ],
+    [ "keypad1:R3", "esp:D14", "green", [ "v0" ] ],
+    [ "keypad1:R4", "esp:D27", "green", [ "v0" ] ],
+    [ "keypad1:C1", "esp:D26", "green", [ "v0" ] ],
+    [ "keypad1:C2", "esp:D25", "green", [ "v0" ] ],
+    [ "keypad1:C3", "esp:D33", "green", [ "v0" ] ],
+    [ "keypad1:C4", "esp:D32", "green", [ "v0" ] ],
+    [ "sd1:CS", "esp:D5", "yellow", [ "h-9.6", "v-48.06" ] ],
+    [ "btn1:1.r", "esp:GND.2", "black", [ "v0" ] ],
+    [ "btn1:2.r", "esp:D21", "orange", [ "h-22.7", "v-44.7", "h259.2", "v76.8" ] ]
+  ],
+  "dependencies": {}
+}
