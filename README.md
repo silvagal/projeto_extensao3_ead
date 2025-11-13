@@ -17,10 +17,13 @@ Ele continua resolvendo o mesmo problema:
 
 # Projeto de Extensão 1
 [Vídeo do projeto de extensão 1 no YouTube](https://youtu.be/-hB9_I5IgXk)
+
 [Repositório do projeto de extensão 1 no GitHub](https://github.com/silvagal/sistema_medicao_fluxo_agua)
+
 
 # Projeto de Extensão 2
 [Vídeo do projeto de extensão 2 no YouTube](https://youtu.be/W7Dq3uiTRVw)
+
 [Repositório do projeto de extensão 2 no GitHub](https://github.com/silvagal/projeto_extensao2_ead.git)
 
 ---
