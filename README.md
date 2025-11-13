@@ -117,7 +117,7 @@ Em resumo, o sistema faz:
 
 ![Esquemático do sistema](imagens/esquematico.PNG)
 
-4. Conexões do circuito
+## 4. Conexões do circuito
    A seguir, um resumo das ligações principais entre ESP32, SD, TFT, keypad e botão.
 
 4.1. Barramento SPI compartilhado (SD + Display)
@@ -154,12 +154,12 @@ C3          ->  GPIO33
 C4          ->  GPIO32
 ````
 
-5. Botão de liga/desliga
+## 5. Botão de liga/desliga
    - A lógica de energia é controlada por uma variável booleana systemOn:
    - KsystemOn = false → “Sistema OFF”, só mostra mensagem pedindo POWER
    - KsystemOn = true → exibe menu e aceita entrada do keypad
 
-6. Trabalhos futuros
+## 6. Trabalhos futuros
    - Sensor de vazão físico: substituir os dados de arquivo por leitura em tempo real.
    - Gráficos na própria tela TFT: desenhar o gráfico tempo × litros com os pontos outliers destacados.
    - Conectividade Wi-Fi: enviar alertas para um servidor web/app sempre que forem detectados outliers.
