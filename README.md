@@ -68,6 +68,8 @@ Em resumo, o sistema faz:
 1.9. Um **botão de liga/desliga** alterna entre:
    - **Sistema OFF** (tela parada, aguardando botão)  
    - **Sistema ON** (menu ativo, interação com keypad habilitada)
+   - 
+   [Vídeo do funcionamento do projeto](https://www.youtube.com/watch?v=2zYBiXICslo)
 
 ---
 
