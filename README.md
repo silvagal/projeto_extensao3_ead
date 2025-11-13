@@ -71,7 +71,7 @@ Em resumo, o sistema faz:
 
 ---
 
-## 2. Estrutura sugerida do repositório
+## 2. Estrutura do repositório
 
 ```text
 ├── src/
@@ -112,6 +112,10 @@ Em resumo, o sistema faz:
    - Keypad.h
 
    [Wokwi](https://wokwi.com/) (opcional) para simulação do circuito:
+
+3.3. Esquemático
+
+![Esquemático do sistema](imagens/esquematico.PNG)
 
 4. Conexões do circuito
    A seguir, um resumo das ligações principais entre ESP32, SD, TFT, keypad e botão.
