@@ -62,7 +62,7 @@ Em resumo, o sistema faz:
 
 ## 2. Estrutura sugerida do repositório
 
-
+```text
 ├── src/
 │   └── outliers_tft_keypad.ino   # Código Arduino (ESP32 + TFT + SD + Keypad)
 |   └── diagram.json              # Código em json com a configuração do esquemático
@@ -75,7 +75,8 @@ Em resumo, o sistema faz:
 │   ├── esquematico.png           # Esquemático do circuito completo
 │   └── tela_menu.png             # Exemplo da tela de menu no ILI9341
 └── README.md
-src/outliers_tft_keypad.ino
+````
+
 Código principal do ESP32 usando Arduino core, com:
 
 inicialização do SD
